@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siguria e Internetit</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body {
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      height: 120vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+    header h1 {
+      font-size: 4rem;
+      animation: slideDown 1.5s ease;
+    }
+    header p {
+      margin-top: 30px;
+      max-width: 800px;
+      font-size: 1.3rem;
+      animation: slideUp 1.5s ease;
+    }
+    section {
+      padding: 100px 10%;
+      min-height: 100vh;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 20px;
+      transition: transform 0.4s, background 0.4s;
+    }
+    .card:hover {
+      transform: translateY(-20px) scale(1.1);
+      background: rgba(255,255,255,0.2);
+    }
+    .card h3 {
+      margin-bottom: 20px;
+      color: #00e5ff;
+      font-size: 1.5rem;
+    }
+    .tips {
+      background: #111;
+      border-left: 5px solid #00e5ff;
+      margin-bottom: 25px;
+      padding: 25px;
+      font-size: 1.1rem;
+      animation: fadeIn 2s ease;
+    }
+    footer {
+      text-align: center;
+      padding: 50px;
+      background: #000;
+      font-size: 1rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-80px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(80px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Siguria e Internetit</h1>
+  <p>Mbrojtja e të dhënave personale dhe përdorimi i sigurt i internetit është thelbësor në botën digjitale. Ky website përmban informacione të detajuara për rreziqet online, këshilla praktike, edukim për të rinjtë, dhe mënyra për të parandaluar sulmet kibernetike.</p>
+</header>
+
+<section>
+  <h2>Rreziqet Kryesore Online</h2>
+  <br>
+  <div class="card-container">
+    <div class="card">
+      <h3>Phishing</h3>
+      <p>Mashtrime përmes email-eve, mesazheve ose faqeve të rreme që vjedhin të dhëna personale, si fjalëkalime dhe numra kartash bankare. Kjo është një nga metodat më të zakonshme të sulmeve online.</p>
+    </div>
+    <div class="card">
+      <h3>Viruse & Malware</h3>
+      <p>Programe të dëmshme që mund të shkatërrojnë pajisjen, të vjedhin informacione personale ose të ndalojnë funksionimin normal të kompjuterit. Përfshin trojan, spyware, ransomware dhe adware.</p>
+    </div>
+    <div class="card">
+      <h3>Cyberbullying</h3>
+      <p>Ngacmime dhe kërcënime në rrjete sociale, chat-e ose platforma të tjera online. Cyberbullying mund të ketë ndikim serioz në shëndetin mendor dhe emocional të viktimave.</p>
+    </div>
+    <div class="card">
+      <h3>Vjedhja e Identitetit</h3>
+      <p>Përdorimi i paautorizuar i të dhënave personale të dikujt tjetër për të kryer veprime financiare ose kriminale. Kjo mund të shkaktojë humbje të mëdha financiare dhe probleme ligjore.</p>
+    </div>
+    <div class="card">
+      <h3>Spyware</h3>
+      <p>Program që monitoron aktivitetin tuaj në internet pa dijeninë tuaj, duke mbledhur informacion privat për qëllime reklamuese ose kriminale.</p>
+    </div>
+    <div class="card">
+      <h3>Rreziqet e Rrjeteve Sociale</h3>
+      <p>Ndërveprimet online mund të çojnë në ekspozim të informacionit personal, presion social ose mashtrime nga persona të panjohur.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Këshilla për Siguri</h2>
+  <br>
+  <div class="tips">Përdor fjalëkalime të forta dhe të ndryshme për çdo llogari. Shmang fjalëkalime të thjeshta si '123456' ose 'password'.</div>
+  <div class="tips">Mos hap linke të dyshimta dhe mos shkarko aplikacione të panjohura nga burime të paautorizuara.</div>
+  <div class="tips">Aktivizo verifikimin me dy hapa (2FA) për të gjitha llogaritë e rëndësishme online.</div>
+  <div class="tips">Mos ndaj të dhëna personale si adresa, numri i telefonit ose informacione bankare në rrjete sociale.</div>
+  <div class="tips">Përdor antivirus të përditësuar dhe mbaj sistemin operativ të azhurnuar.</div>
+  <div class="tips">Kujdes me Wi-Fi publik: përdor VPN dhe mos kryej veprime të ndjeshme financiare në rrjete të pasigurta.</div>
+</section>
+
+<section>
+  <h2>Siguria për Fëmijë dhe të Rinj</h2>
+  <p>
+    Fëmijët dhe të rinjtë duhet të edukohen mbi rreziqet online, privatësinë dhe sjelljen e duhur në internet. Prindërit duhet të përdorin kontrolle prindërore, të monitorojnë aktivitetin online dhe të flasin me fëmijët për sigurinë dhe respektin në botën digjitale.
+  </p>
+  <p>
+    Edukimi online përfshin njohjen e phishing, cyberbullying, ransomware, dhe mënyrave të sigurta për të përdorur rrjetet sociale, aplikacionet dhe lojërat online. Krijimi i zakoneve të mira që nga mosha e hershme ndihmon në mbrojtjen e të dhënave personale dhe krijon përdorues të përgjegjshëm digitalë.
+  </p>
+</section>
+
+<section>
+  <h2>Raste Praktike dhe Edukim</h2>
+  <p>
+    Shembuj realë të sulmeve online ndihmojnë përdoruesit të kuptojnë rrezikun dhe të mësojnë si të reagojnë. Kjo përfshin identifikimin e email-eve të dyshimta, kontrollin e faqes para ndarjes së informacioneve dhe përdorimin e fjalëkalimeve të forta.
+  </p>
+  <p>
+    Edukimi mbi sigurinë online përfshin gjithashtu krijimin e një plani reagimi në rast sulmesh, si dhe kuptimin e ligjeve dhe rregullave për mbrojtjen e të dhënave personale.
+  </p>
+</section>
+
+<footer>
+  © 2026 | Shkolla "Angela Merkel" – Siguria e Internetit | Të Drejtat e Rezervuara
+</footer>
+
+</body>
+</html>
